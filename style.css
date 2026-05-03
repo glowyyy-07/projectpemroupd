@@ -820,3 +820,31 @@ nav {
   color: var(--text-wine); /* Berubah jadi warna tema saat hover */
   transform: scale(1.1);
 }
+
+/* ── 1. REVISI NAVBAR MODE GELAP ── */
+body.dark nav {
+  background-color: rgba(45, 25, 33, 0.85) !important; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* ── 2. REVISI KURSOR MODE GELAP ── */
+body.dark {
+  /* Kursor standar warna terang */
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ctext y='20' font-size='20' fill='%23f0d6e0'%3E✿%3C/text%3E%3C/svg%3E") 12 12, auto !important;
+}
+
+body.dark a, 
+body.dark button, 
+body.dark [onclick], 
+body.dark .gallery-item, 
+body.dark .carousel-btn, 
+body.dark .carousel-dot, 
+body.dark .dark-toggle {
+  /* Kursor jari (pointer) warna terang saat menyentuh tombol/link */
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ctext y='20' font-size='20' fill='%23f0d6e0'%3E✿%3C/text%3E%3C/svg%3E") 12 12, pointer !important;
+}
+
+/* ── 3. REVISI IKON LOKASI MODE GELAP ── */
+body.dark img[src*="lokasi"] {
+  filter: invert(1) brightness(2) !important;
+}
