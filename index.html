@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home — Gloria ✿</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<!-- Dark Toggle -->
+<button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
+  <img src="icons/moon.svg"  class="toggle-icon moon-icon" alt="Dark">
+  <img src="icons/sun.svg"   class="toggle-icon sun-icon"  alt="Light">
+  <span class="toggle-label-moon">Dark</span>
+  <span class="toggle-label-sun" style="display:none">Light</span>
+</button>
+<style>
+  body.dark .toggle-label-moon { display:none!important; }
+  body.dark .toggle-label-sun  { display:inline!important; }
+</style>
+
+<!-- Header -->
+<header class="site-header fade-in">
+  <h1 class="title">✿ Gloria's World ✿</h1>
+  <p class="subtitle">˚₊‧꒰ა ♡ ໒꒱ ‧₊˚</p>
+</header>
+<hr class="divider">
+
+<!-- Navbar -->
+<nav class="navbar fade-in delay-1">
+  <a href="index.html">Home</a><span class="sep">✦</span>
+  <a href="gallery.html">Gallery</a><span class="sep">✦</span>
+  <a href="blog.html">Blog</a><span class="sep">✦</span>
+  <a href="contact.html">Contact</a>
+  <!-- Widget Cuaca Minimalis di Navbar (Sejajar & Estetik) -->
+</nav>
+<hr class="divider">
+
+<div class="page-wrapper">
+
+  <!-- Hero -->
+  <section class="hero-section">
+    <div>
+      <div class="hero-photo-frame fade-in delay-1">
+        <img src="img/foto16.jpeg" alt="Gloria">
+        <div class="hero-photo-caption">✿ Gloria</div>
+      </div>
+    </div>
+    <div class="hero-text fade-in delay-2">
+      <p class="welcome-tag">
+        <img src="icons/stars.svg" class="icon-svg icon-svg-sm" alt="">
+        Welcome to my world
+      </p>
+      <h2 class="hero-name">Hello, I'm Gloria Tumundo</h2>
+      <p class="hero-role">
+        <img src="icons/laptop.svg" class="icon-svg icon-svg-sm" alt="">
+        an informatics student on a journey in tech
+      </p>
+      <p class="hero-desc">
+        Mahasiswi Informatika yang selalu penasaran dengan dunia teknologi.
+        Saya percaya bahwa teknologi bukan hanya soal kode, tapi juga tentang
+        bagaimana ia bisa menyentuh kehidupan manusia.
+      </p>
+      <div class="hero-tags">
+        <span class="tag-pill">✦ Informatika</span>
+        <span class="tag-pill">✦ Teknologi</span>
+        <span class="tag-pill">✦ Web Development</span>
+      </div>
+      <a href="blog.html" class="btn-link">→ Baca Blog Saya</a>
+    </div>
+  </section>
+  
+  <!-- Widget Daily Notes (Tengah Halaman) -->
+  <section class="box-soft fade-in delay-2" style="max-width: 450px; margin: 40px auto; text-align: center; display: flex; flex-direction: column; align-items: center;">
+  
+    <h3 class="heading" style="font-family: var(--font-display); font-size: 2rem; font-style: italic; color: var(--text-wine); font-weight: 600; margin-bottom: 5px;">
+    Daily Note ♡
+    </h3>
+  
+    <p id="noteDisplay" style="font-family: var(--font-body); color: var(--text-mid); margin: 15px 0; min-height: 45px; font-size: 0.95rem; line-height: 1.6;">
+      Klik tombol di bawah untuk pesan manismu!
+    </p>
+  
+    <button id="btnNote" class="btn-link" style="margin-top: 10px;">
+      Open Note ✿
+    </button>
+
+  </section>
+
+  <hr class="divider" style="width:100%; margin:8px 0 36px;">
+
+  <!-- Carousel -->
+  <section class="fade-in">
+    <div class="section-head">
+      <span class="section-label">✦ Highlights</span>
+      <h2 class="heading">A Glimpse of My World</h2>
+    </div>
+    <div class="carousel-wrapper">
+      <button class="carousel-btn prev" id="carouselPrev" aria-label="Previous">‹</button>
+      <div class="carousel-track" id="carouselTrack">
+
+        <div class="carousel-slide">
+          <div class="slide-icon">
+            <img src="icons/laptop.svg" class="icon-svg-md icon-filter" alt="">
+          </div>
+          <p class="slide-title">Informatika &amp; Teknologi</p>
+          <p class="slide-text">Menjelajahi dunia kode, sistem, dan inovasi digital setiap harinya.</p>
+        </div>
+
+        <div class="carousel-slide">
+          <div class="slide-icon">
+            <img src="icons/palette.svg" class="icon-svg-md icon-filter" alt="">
+          </div>
+          <p class="slide-title">Seni &amp; Kreativitas</p>
+          <p class="slide-text">Percaya bahwa kode bisa menjadi medium seni — creative coding is my love.</p>
+        </div>
+
+        <div class="carousel-slide">
+          <div class="slide-icon">
+            <img src="icons/camera.svg" class="icon-svg-md icon-filter" alt="">
+          </div>
+          <p class="slide-title">Momen &amp; Kenangan</p>
+          <p class="slide-text">Mengabadikan setiap momen indah dalam galeri foto penuh warna.</p>
+        </div>
+
+        <div class="carousel-slide">
+          <div class="slide-icon">
+            <img src="icons/book.svg" class="icon-svg-md icon-filter" alt="">
+          </div>
+          <p class="slide-title">Terus Belajar</p>
+          <p class="slide-text">"Learning never exhausts the mind." — selalu ada hal baru untuk dipelajari.</p>
+        </div>
+
+      </div>
+      <button class="carousel-btn next" id="carouselNext" aria-label="Next">›</button>
+    </div>
+    <div class="carousel-dots" id="carouselDots"></div>
+  </section>
+
+  <div class="spacer-md"></div>
+
+  <!-- About -->
+  <section class="fade-in">
+    <div class="section-head">
+      <span class="section-label">✦ About Me</span>
+      <h2 class="heading">A little bit about myself</h2>
+    </div>
+    <div class="box" style="text-align:center;">
+      <p style="color:var(--text-dark);font-size:.92rem;margin-bottom:12px;transition:color .4s ease;">
+        Welcome to Gloria's World — sebuah ruang kecil di internet tempat saya berbagi cerita, momen, dan pikiran.
+      </p>
+      <p style="color:var(--text-dark);font-size:.92rem;margin-bottom:12px;transition:color .4s ease;">
+        Sebagai mahasiswi Informatika, saya percaya teknologi hadir bukan hanya untuk menyelesaikan masalah,
+        tetapi juga untuk menciptakan keindahan — sama seperti seni.
+      </p>
+      <p style="color:var(--text-dark);font-size:.92rem;transition:color .4s ease;">
+        Di sini kamu akan menemukan galeri foto, tulisan blog, dan sedikit tentang diri saya.
+      </p>
+    </div>
+  </section>
+
+  <div class="spacer-md"></div>
+
+  <!-- Quote -->
+  <section class="fade-in">
+    <div class="section-head">
+      <h2 class="heading">✧ My Favorite Quote ✧</h2>
+    </div>
+    <div class="box-soft" style="text-align:center;max-width:520px;margin:0 auto;">
+      <span class="quote-mark">"</span>
+      <p class="quote-text">"Learning never exhausts the mind."</p>
+      <hr class="divider" style="width:30%;margin:14px auto 10px;">
+      <p class="quote-author">— Leonardo da Vinci</p>
+    </div>
+  </section>
+
+  <div class="spacer-md"></div>
+
+  <!-- Quick Links -->
+  <section class="fade-in">
+    <div class="section-head">
+      <h2 class="heading">✿ Explore My World ✿</h2>
+    </div>
+    <div class="quick-links">
+      <div class="quick-link-card">
+        <a href="gallery.html">Gallery</a>
+        <p>Koleksi foto-foto Gloria</p>
+      </div>
+      <div class="quick-link-card">
+        <a href="blog.html">Blog</a>
+        <p>Konten Gloria</p>
+      </div>
+      <div class="quick-link-card">
+        <a href="contact.html">Contact</a>
+        <p>Let's connect!</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="spacer-lg"></div>
+</div>
+
+
+<!-- Footer -->
+<footer class="site-footer">
+  <p>♡ Thank you for visiting Gloria's World ♡</p>
+  <small>Made with love &nbsp;·&nbsp; 2026</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
