@@ -722,20 +722,26 @@ nav {
    ========================================= */
 @media (max-width: 680px) {
 
-  /* --- TAMBAHAN BARU: Menurunkan Posisi Dark Mode DAN Widget Cuaca --- */
+  /* --- REVISI: Tukar Posisi Widget & Navbar (Ukuran Huruf Tetap Normal) --- */
   .dark-toggle {
-    top: 55px !important;
+    top: 18px !important;
+    transform: scale(1) !important; /* Memastikan tidak mengecil */
   }
 
-  /* Ini dia yang bikin widget Manado ikut turun! */
   #weather-widget {
-    top: 55px !important;
+    top: 18px !important;
+    transform: scale(1) !important; /* Memastikan tidak mengecil */
+  }
+
+  nav, .navbar {
+    top: 55px !important; /* Navbar mengalah turun ke 55px */
   }
 
   /* --- 1. Mencegah Overlap Navbar/Widget --- */
   .page-wrapper {
-    padding-top: 140px !important;
+    padding-top: 5px !important;
   }
+
 
   /* --- 2. PENYESUAIAN FOTO13.JEPG & TEKS SIDE-BY-SIDE --- */
   .hero-section {
@@ -775,9 +781,6 @@ nav {
     font-size: 0.7rem !important;
     margin-bottom: 5px !important;
   }
-
-  /* Sembunyikan tag-pill di mobile jika terlalu penuh */
-  .hero-tags { display: none !important; }
 }
 
 /* ── 8. VIDEO FLOATING SINEMATIK (B + D) ── */
