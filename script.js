@@ -155,7 +155,7 @@ console.log("Halo Gloria! Kodingan AJAX ini berhasil dibaca browser!");
   // 1. Suruh JS membuat kotaknya secara otomatis
   const weatherWidget = document.createElement('div');
   weatherWidget.innerHTML = `
-    <div style="position: fixed; top: 18px; left: 22px; z-index: 9999; display: flex; align-items: center; gap: 8px; background: var(--bg-card); border: none; outline: none; border-radius: 50px; padding: 7px 16px; color: var(--text-wine); font-family: var(--font-body); font-size: 12px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: var(--shadow-sm); transition: all var(--transition);">
+    <div id="weather-widget" style="position: fixed; top: 18px; left: 22px; z-index: 9999; display: flex; align-items: center; gap: 8px; background: var(--bg-card); border: none; outline: none; border-radius: 50px; padding: 7px 16px; color: var(--text-wine); font-family: var(--font-body); font-size: 12px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: var(--shadow-sm); transition: all var(--transition);">
       <img src="lokasi.svg" alt="lokasi" style="width: 14px; height: 14px; filter: brightness(0.8) sepia(1) hue-rotate(300deg);">
       <span style="display: inline-flex; align-items: center; gap: 4px;">
         MANADO, <span id="weatherDisplay">--°C</span>
