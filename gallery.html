@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Gloria ✿</title>
+  <link rel="stylesheet" href="style.css">
+  <!--
+    DIMENSI FOTO (referensi):
+    foto1:1920×1080 · foto2:1920×1080 · foto3:1040×780 · foto5:1280×960
+    foto6:1280×720  · foto7:720×1280  · foto8:960×1280  · foto9:1600×900
+    foto10:1280×960 · foto11:719×1280 · foto12:1280×960 · foto13:960×1280
+    foto14:1280×719 · foto15:853×1280 · foto17:1200×1600
+  -->
+  <style>
+    .row1  .gallery-item                         { height:240px; flex:1; }
+    .row2a .portrait-item                        { height:320px; flex:0 0 34.7%; }
+    .row2a .landscape-item                       { height:320px; flex:1; }
+    .row2b .portrait-item                        { height:300px; flex:0 0 34.7%; }
+    .row2b .landscape-item                       { height:300px; flex:1; }
+    .row3  .gallery-item                         { height:230px; flex:1; }
+    .row4                                        { min-height:372px; }
+    .row4  .col-portrait                         { flex:0 0 27%; display:flex; flex-direction:column; }
+    .row4  .col-portrait .gallery-item           { height:100%; }
+    .row4  .col-stacked                          { flex:0 0 46%; display:flex; flex-direction:column; gap:10px; }
+    .row4  .col-stacked .gallery-item            { height:181px; }
+    .row4  .col-portrait2                        { flex:0 0 27%; }
+    .row4  .col-portrait2 .gallery-item          { height:100%; }
+    .row5  .portrait-narrow                      { flex:0 0 25%; height:260px; }
+    .row5  .landscape-wide                       { flex:1;       height:260px; }
+    .row5  .portrait-narrow2                     { flex:0 0 25%; height:260px; }
+  </style>
+</head>
+<body>
+
+<button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
+  <img src="icons/moon.svg" class="toggle-icon moon-icon" alt="Dark">
+  <img src="icons/sun.svg"  class="toggle-icon sun-icon"  alt="Light">
+  <span class="toggle-label-moon">Dark</span>
+  <span class="toggle-label-sun" style="display:none">Light</span>
+</button>
+<style>
+  body.dark .toggle-label-moon{display:none!important;}
+  body.dark .toggle-label-sun{display:inline!important;}
+</style>
+
+<header class="site-header fade-in">
+  <h1 class="title">✿ My Gallery ✿</h1>
+  <p class="subtitle">˚₊‧꒰ა ♡ ໒꒱ ‧₊˚</p>
+</header>
+<hr class="divider">
+
+<nav class="navbar fade-in delay-1">
+  <a href="index.html">Home</a><span class="sep">✦</span>
+  <a href="gallery.html">Gallery</a><span class="sep">✦</span>
+  <a href="blog.html">Blog</a><span class="sep">✦</span>
+  <a href="contact.html">Contact</a>
+</nav>
+<hr class="divider">
+
+<div class="page-wrapper">
+
+  <div class="section-head fade-in delay-2" style="margin-bottom:24px;">
+    <h2 class="heading" style="font-style:italic;">My Moments</h2>
+    <p style="font-family:'Georgia',serif;font-style:italic;color:var(--text-mid);font-size:.9rem;margin-top:4px;">
+      Aesthetic &amp; meaningful ♡
+    </p>
+  </div>
+
+  <div class="gallery-grid fade-in delay-3">
+
+    <!-- Row 1 -->
+    <div class="gallery-row row1">
+      <div class="gallery-item">
+        <img src="img/foto1.jpg" alt="Momen 1">
+        <div class="img-caption"><span>✿</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="img/foto2.jpg" alt="Momen 2">
+        <div class="img-caption"><span>✿</span></div>
+      </div>
+    </div>
+
+    <!-- Row 2a -->
+    <div class="gallery-row row2a">
+      <div class="gallery-item portrait-item">
+        <img src="img/foto7.jpeg" alt="Momen 7">
+        <div class="img-caption"><span>✿</span></div>
+      </div>
+      <div class="gallery-item landscape-item">
+        <img src="img/foto3.jpeg" alt="Momen 3">
+        <div class="img-caption"><span>✿</span></div>
+      </div>
+    </div>
+
+    <!-- Row 2b -->
+    <div class="gallery-row row2b">
+      <div class="gallery-item portrait-item">
+        <img src="img/foto17.jpg" alt="Momen 17">
+        <div class="img-caption"><span>✿</span></div>
+      </div>
+      <div class="gallery-item landscape-item">
+        <img src="img/foto5.jpeg" alt="Momen 5">
+        <div class="img-caption"><span>✿</span></div>
+      </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="gallery-row row3">
+      <div class="gallery-item">
+        <img src="img/foto6.jpeg" alt="Momen 6">
+        <div class="img-caption"><span>✿</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="img/foto9.jpeg" alt="Momen 9">
+        <div class="img-caption"><span>✿</span></div>
+      </div>
+    </div>
+
+    <!-- Row 4 -->
+    <div class="gallery-row row4">
+      <div class="col-portrait">
+        <div class="gallery-item">
+          <img src="img/foto8.jpeg" alt="Momen 8">
+          <div class="img-caption"><span>✿</span></div>
+        </div>
+      </div>
+      <div class="col-stacked">
+        <div class="gallery-item">
+          <img src="img/foto10.jpeg" alt="Momen 10">
+          <div class="img-caption"><span>✿</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/foto12.jpeg" alt="Momen 12">
+          <div class="img-caption"><span>✿</span></div>
+        </div>
+      </div>
+      <div class="col-portrait2">
+        <div class="gallery-item">
+          <img src="img/foto13.jpeg" alt="Momen 13">
+          <div class="img-caption"><span>✿</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 5 -->
+    <div class="gallery-row row5">
+      <div class="gallery-item portrait-narrow">
+        <img src="img/foto11.jpeg" alt="Momen 11">
+        <div class="img-caption"><span>✿</span></div>
+      </div>
+      <div class="gallery-item landscape-wide">
+        <img src="img/foto14.jpeg" alt="Momen 14">
+        <div class="img-caption"><span>✿</span></div>
+      </div>
+      <div class="gallery-item portrait-narrow2">
+        <img src="img/foto15.jpeg" alt="Momen 15">
+        <div class="img-caption"><span>✿</span></div>
+      </div>
+    </div>
+
+  </div><!-- /gallery-grid -->
+
+  <div class="spacer-md"></div>
+
+  <!-- Link Glowy -->
+  <div class="fade-in" style="text-align:center;">
+    <hr class="divider" style="width:100%;margin-bottom:28px;">
+    <p style="font-family:'Georgia',serif;font-style:italic;color:var(--text-rose);font-size:1.2rem;margin-bottom:16px;">
+      ✿ there's more ✿
+    </p>
+    <a href="glowy.html">
+      <div class="box-soft" style="display:inline-block;padding:18px 40px;transition:transform .28s,box-shadow .28s;"
+           onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-md)'"
+           onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <p style="font-family:'Georgia',serif;font-style:italic;color:var(--text-wine);font-size:1rem;margin:0;">
+          ✿ somewhere in glowy's world ✿
+        </p>
+        <p style="font-size:.78rem;color:var(--text-mid);margin-top:4px;">a little corner just for us ♡</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="spacer-lg"></div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">‹</button>
+  <div class="lightbox-inner">
+    <img src="" alt="" id="lightboxImg">
+  </div>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">›</button>
+</div>
+
+<footer class="site-footer">
+  <p>♡ Every photo tells a story ♡</p>
+  <small>Made with love &nbsp;·&nbsp; 2026</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

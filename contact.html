@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Gloria ✿</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
+  <img src="icons/moon.svg" class="toggle-icon moon-icon" alt="Dark">
+  <img src="icons/sun.svg"  class="toggle-icon sun-icon"  alt="Light">
+  <span class="toggle-label-moon">Dark</span>
+  <span class="toggle-label-sun" style="display:none">Light</span>
+</button>
+<style>
+  body.dark .toggle-label-moon{display:none!important;}
+  body.dark .toggle-label-sun{display:inline!important;}
+</style>
+
+<header class="site-header fade-in">
+  <h1 class="title">✿ Contact Me ✿</h1>
+  <p class="subtitle">˚₊‧꒰ა ♡ ໒꒱ ‧₊˚</p>
+</header>
+<hr class="divider">
+
+<nav class="navbar fade-in delay-1">
+  <a href="index.html">Home</a><span class="sep">✦</span>
+  <a href="gallery.html">Gallery</a><span class="sep">✦</span>
+  <a href="blog.html">Blog</a><span class="sep">✦</span>
+  <a href="contact.html">Contact</a>
+</nav>
+<hr class="divider">
+
+<div class="page-wrapper">
+
+  <div class="section-head fade-in delay-2" style="margin-bottom:32px;">
+    <h2 class="heading" style="font-style:italic;">Get in Touch ✿</h2>
+    <p style="font-size:.9rem;color:var(--text-mid);margin-top:6px;transition:color .4s;">
+      Senang bertemu kamu! Hubungi saya melalui platform di bawah ini ♡
+    </p>
+  </div>
+
+  <!-- Contact Cards -->
+  <div style="max-width:580px;margin:0 auto;">
+
+    <a href="mailto:gloriatumundo026@student.unsrat.ac.id" style="display:block;">
+      <div class="contact-card fade-in delay-1">
+        <div class="contact-icon">
+          <img src="icons/mail.svg" class="icon-svg icon-filter" alt="Email">
+        </div>
+        <div class="contact-info">
+          <p class="contact-label">Email</p>
+          <p class="contact-value">gloriatumundo026@student.unsrat.ac.id</p>
+        </div>
+        <div class="contact-arrow">→</div>
+      </div>
+    </a>
+
+    <a href="https://instagram.com/gloriatumundo" target="_blank" style="display:block;">
+      <div class="contact-card fade-in delay-2">
+        <div class="contact-icon blush">
+          <img src="icons/instagram.svg" class="icon-svg icon-filter" alt="Instagram">
+        </div>
+        <div class="contact-info">
+          <p class="contact-label">Instagram</p>
+          <p class="contact-value">@gloriatumundo</p>
+        </div>
+        <div class="contact-arrow">→</div>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="spacer-md"></div>
+
+  <!-- Contact Form -->
+  <div style="max-width:580px;margin:0 auto;">
+    <div class="contact-form fade-in">
+      <p class="form-title">Kirim Pesan ♡</p>
+
+      <form id="contactForm" novalidate>
+
+        <div class="form-group">
+          <label for="name">Nama</label>
+          <input type="text" id="name" name="name" placeholder="Nama kamu...">
+          <p class="form-error" id="nameError">Nama minimal 2 karakter ya ♡</p>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="email@contoh.com">
+          <p class="form-error" id="emailError">Masukkan alamat email yang valid ♡</p>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" placeholder="Halo Gloria, saya ingin..."></textarea>
+          <p class="form-error" id="messageError">Pesan minimal 10 karakter ya ♡</p>
+        </div>
+
+        <button type="submit" class="form-submit">
+          <img src="icons/send-horizontal.svg" class="icon-svg-sm" alt="" style="filter:invert(27%) sepia(20%) saturate(1100%) hue-rotate(300deg) brightness(0.72);">
+          Kirim Pesan
+        </button>
+
+      </form>
+
+      <div class="form-success" id="formSuccess">
+        ✿ Terima kasih! Pesan kamu sudah saya terima ♡
+      </div>
+    </div>
+  </div>
+
+  <div class="spacer-md"></div>
+
+  <div class="fade-in" style="text-align:center;">
+    <p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2rem;font-style:italic;color:var(--text-rose);">
+      Always here ♡
+    </p>
+    <p style="font-size:.88rem;color:var(--text-mid);margin-top:8px;transition:color .4s;">
+      Terima kasih sudah mampir! ✿
+    </p>
+  </div>
+
+  <div class="spacer-lg"></div>
+</div>
+
+<footer class="site-footer">
+  <small>Made with love &nbsp;·&nbsp; 2026</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Gloria ✿</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
+  <img src="icons/moon.svg" class="toggle-icon moon-icon" alt="Dark">
+  <img src="icons/sun.svg"  class="toggle-icon sun-icon"  alt="Light">
+  <span class="toggle-label-moon">Dark</span>
+  <span class="toggle-label-sun" style="display:none">Light</span>
+</button>
+<style>
+  body.dark .toggle-label-moon{display:none!important;}
+  body.dark .toggle-label-sun{display:inline!important;}
+</style>
+
+<header class="site-header fade-in">
+  <h1 class="title">✿ My Blog ✿</h1>
+  <p class="subtitle">˚₊‧꒰ა ♡ ໒꒱ ‧₊˚</p>
+</header>
+<hr class="divider">
+
+<nav class="navbar fade-in delay-1">
+  <a href="index.html">Home</a><span class="sep">✦</span>
+  <a href="gallery.html">Gallery</a><span class="sep">✦</span>
+  <a href="blog.html">Blog</a><span class="sep">✦</span>
+  <a href="contact.html">Contact</a>
+</nav>
+<hr class="divider">
+
+<div class="page-wrapper">
+
+  <div class="section-head fade-in delay-2" style="margin-bottom:32px;">
+    <h2 class="heading" style="font-style:italic;">
+      Artikel, tips &amp; tricks, tentang saya, dan infografis
+    </h2>
+  </div>
+
+  <!-- ARTIKEL 1: foto4 kiri + teks kanan -->
+  <article class="article-card fade-in">
+    <div class="panel-img" style="min-height:320px;">
+      <img src="img/foto4.jpeg" alt="AI di 2026">
+    </div>
+    <div class="panel-text">
+      <p class="article-meta">✦ Artikel Utama &nbsp;·&nbsp; Teknologi &nbsp;·&nbsp; Maret 2026</p>
+      <h2 class="article-title">AI di 2026: Kecerdasan yang Menyentuh Kehidupan</h2>
+      <p class="article-body">
+        Perkembangan Artificial Intelligence di tahun 2026 semakin pesat.
+        Dari pendidikan hingga kesehatan, AI kini menjadi bagian tak terpisahkan dari kehidupan manusia.
+      </p>
+      <p class="article-body">
+        Sebagai mahasiswi informatika, saya percaya kita harus memahami dan memanfaatkan teknologi ini
+        secara bijak agar bisa berkontribusi positif bagi masyarakat. Teknologi bukan sesuatu yang perlu
+        ditakuti, melainkan sebuah alat yang indah jika digunakan dengan benar.
+      </p>
+      <p class="article-body">
+        AI generatif, machine learning, dan neural network kini hadir di berbagai aspek kehidupan —
+        dari asisten virtual, deteksi penyakit, hingga pembuatan karya seni digital yang memukau.
+      </p>
+    </div>
+  </article>
+
+  <!-- ARTIKEL 2: teks kiri + ikon palette kanan -->
+  <article class="article-card reverse fade-in">
+    <div class="panel-text">
+      <p class="article-meta">✦ Seni Digital &nbsp;·&nbsp; Februari 2026</p>
+      <h2 class="article-title">Ketika Kode Bertemu Seni: Creative Coding</h2>
+      <p class="article-body">
+        Siapa bilang programmer tidak bisa jadi seniman? Creative coding adalah bidang yang membuktikan
+        bahwa kode bisa menjadi medium untuk mengekspresikan keindahan dan emosi.
+      </p>
+      <p class="article-body">
+        Dari generative art hingga data visualization yang memukau, batas antara teknologi dan seni
+        semakin tipis. Tools seperti Processing, p5.js, dan Three.js memungkinkan siapa saja menciptakan
+        karya visual yang indah hanya dengan beberapa baris kode.
+      </p>
+      <p class="article-body">
+        Ini adalah bukti bahwa sains dan seni bukanlah dua hal yang bertentangan — justru ketika keduanya
+        bertemu, lahirlah sesuatu yang luar biasa.
+      </p>
+    </div>
+    <div class="panel-icon">
+      <div class="icon-circle">
+        <img src="icons/palette.svg" class="icon-svg-md icon-svg" alt="Seni Digital">
+      </div>
+      <span class="icon-label">Art &amp; Code</span>
+    </div>
+  </article>
+
+  <!-- ARTIKEL 3: ikon lightbulb kiri + teks kanan -->
+  <article class="article-card fade-in">
+    <div class="panel-icon" style="background:var(--bg-soft);">
+      <div class="icon-circle">
+        <img src="icons/lightbulb.svg" class="icon-svg-md icon-svg" alt="Tips Kuliah">
+      </div>
+      <span class="icon-label">Tips Kuliah</span>
+    </div>
+    <div class="panel-text">
+      <p class="article-meta">✦ Tips &amp; Tricks &nbsp;·&nbsp; Januari 2026</p>
+      <h2 class="article-title">5 Kebiasaan Positif Mahasiswa/i Informatika</h2>
+      <p class="article-body">
+        Kuliah informatika penuh tantangan, tapi juga penuh keindahan. Ada banyak kebiasaan kecil yang
+        bisa membuat perjalanan kita lebih bermakna dan menyenangkan.
+      </p>
+      <p class="article-body" style="line-height:2.1;">
+        <strong>1.</strong> Belajar konsisten setiap hari, meski hanya 30 menit.<br>
+        <strong>2.</strong> Bereksperimen dengan proyek kecil untuk mengasah skill.<br>
+        <strong>3.</strong> Membangun komunitas belajar bersama teman.<br>
+        <strong>4.</strong> Dokumentasikan setiap proyek di GitHub.<br>
+        <strong>5.</strong> Jangan lupa istirahat dan merawat diri sendiri ♡
+      </p>
+    </div>
+  </article>
+
+  <div class="spacer-md"></div>
+
+  <!-- VIDEO -->
+  <section class="video-section fade-in">
+    <div class="video-header">
+      <h2 class="heading" style="font-size:1.6rem;display:flex;align-items:center;justify-content:center;gap:10px;">
+        <img src="icons/stars.svg" class="icon-svg icon-filter" alt="">
+        Video Perkenalan
+      </h2>
+      <p style="font-family:'Georgia',serif;font-style:italic;color:var(--text-dark);font-size:.9rem;margin-top:6px;transition:color .4s;">
+        Halo! Di sini saya ingin berbagi sedikit tentang diri saya 
+      </p>
+    </div>
+    <div class="video-body">
+  
+  <div class="video-floating-cinematic">
+    <div class="video-container-inner">
+      
+      <div class="video-overlay" id="videoOverlay" style="background-image: url('img/foto25.jpg');">
+        <div class="play-btn-modern">
+          <span class="play-icon">▶</span>
+        </div>
+      </div>
+      
+      <video id="mainVideo" width="100%">
+        <source src="video/video1.mp4" type="video/mp4">
+        Browser tidak mendukung video.
+      </video>
+      
+    </div>
+  </div>
+
+  <p style="font-size:.88rem;color:var(--text-dark);max-width:520px;margin:25px auto 0;transition:color .4s; line-height: 1.6;">
+    Di video ini saya memperkenalkan diri, termasuk kelebihan saya dan beberapa hal yang masih terus saya pelajari.
+  </p>
+  
+</div>
+
+      <p style="font-size:.88rem;color:var(--text-dark);max-width:520px;margin:16px auto 0;transition:color .4s;">
+        Di video ini saya memperkenalkan diri, termasuk kelebihan saya dan beberapa hal yang masih terus saya pelajari.
+      </p>
+      
+    </div>
+  </section>
+
+  <div class="spacer-md"></div>
+
+  <!-- INFOGRAFIS -->
+  <section class="infografis-section fade-in">
+    <div class="infografis-header">
+      <h2 class="heading" style="font-size:1.6rem;">Infografis Trend Komputer Bagi Masyarakat</h2>
+    </div>
+    <div class="infografis-body">
+      <img src="img/infografis.jpg" alt="Infografis Trend Komputer Bagi Masyarakat">
+    </div>
+  </section>
+
+  <div class="spacer-lg"></div>
+</div>
+
+<footer class="site-footer">
+  <p>♡ Thank you for reading ♡</p>
+  <small>Made with love &nbsp;·&nbsp; 2026</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

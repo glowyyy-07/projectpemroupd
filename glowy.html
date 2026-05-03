@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>✿ somewhere in glowy's world</title>
+  <link rel="stylesheet" href="style.css">
+  <!--
+    foto18:3072×4096 portrait · foto19:1920×1080 landscape · foto20:1920×1080 landscape
+    foto21:1080×1080 square  · foto22:1080×1080 square    · foto23:3024×4032 portrait
+    foto24:3072×4096 portrait
+  -->
+  <style>
+    .glowy-row .landscape-item { height:200px; flex:1; }
+    .glowy-row .portrait-item  { height:340px; flex:1; }
+    .glowy-row .square-item    { height:260px; flex:1; }
+    .glowy-row .portrait-center{ height:380px; flex:0 0 50%; }
+  </style>
+</head>
+<body>
+
+<button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
+  <img src="icons/moon.svg" class="toggle-icon moon-icon" alt="Dark">
+  <img src="icons/sun.svg"  class="toggle-icon sun-icon"  alt="Light">
+  <span class="toggle-label-moon">Dark</span>
+  <span class="toggle-label-sun" style="display:none">Light</span>
+</button>
+<style>
+  body.dark .toggle-label-moon{display:none!important;}
+  body.dark .toggle-label-sun{display:inline!important;}
+</style>
+
+<header class="glowy-header fade-in">
+  <p class="supertitle">˚₊‧ a little corner just for us ‧₊˚</p>
+  <h1 class="main-title">✿ somewhere in glowy's world ✿</h1>
+  <p class="subtitle">˚₊‧꒰ა ♡ ໒꒱ ‧₊˚</p>
+</header>
+<hr class="divider" style="width:40%;">
+
+<nav class="navbar fade-in delay-1">
+  <a href="index.html">Home</a><span class="sep">✦</span>
+  <a href="gallery.html">← Back to Gallery</a><span class="sep">✦</span>
+  <a href="blog.html">Blog</a><span class="sep">✦</span>
+  <a href="contact.html">Contact</a>
+</nav>
+<hr class="divider" style="width:40%;">
+
+<div style="text-align:center;padding:18px 0 4px;">
+  <p style="font-family:'Georgia',serif;font-style:italic;color:var(--text-wine);font-size:1.1rem;">our little moments ♡</p>
+  <p style="font-size:.82rem;color:var(--text-mid);transition:color .4s;">just us, always ✿</p>
+</div>
+
+<!-- Glowy Gallery -->
+<div class="glowy-grid fade-in delay-2">
+
+  <div class="glowy-separator">✦ &nbsp; ✿ &nbsp; ♡ &nbsp; ✿ &nbsp; ✦</div>
+
+  <!-- Row 1: landscape pair -->
+  <div class="glowy-row">
+    <div class="gallery-item glowy-item landscape-item">
+      <img src="img/foto19.jpg" alt="">
+      <div class="img-caption"><span>♡</span></div>
+    </div>
+    <div class="gallery-item glowy-item landscape-item">
+      <img src="img/foto20.jpg" alt="">
+      <div class="img-caption"><span>♡</span></div>
+    </div>
+  </div>
+
+  <div class="glowy-separator">— ♡ —</div>
+
+  <!-- Row 2: portrait pair -->
+  <div class="glowy-row">
+    <div class="gallery-item glowy-item portrait-item">
+      <img src="img/foto18.jpg" alt="">
+      <div class="img-caption"><span>✿</span></div>
+    </div>
+    <div class="gallery-item glowy-item portrait-item">
+      <img src="img/foto24.jpg" alt="">
+      <div class="img-caption"><span>✿</span></div>
+    </div>
+  </div>
+
+  <div class="glowy-separator">— ♡ —</div>
+
+  <!-- Row 3: square pair -->
+  <div class="glowy-row">
+    <div class="gallery-item glowy-item square-item">
+      <img src="img/foto22.jpg" alt="">
+      <div class="img-caption"><span>♡</span></div>
+    </div>
+    <div class="gallery-item glowy-item square-item">
+      <img src="img/foto21.jpg" alt="">
+      <div class="img-caption"><span>♡</span></div>
+    </div>
+  </div>
+
+  <div class="glowy-separator">— ♡ —</div>
+
+  <!-- Row 4: single centered portrait -->
+  <div class="glowy-row" style="justify-content:center;">
+    <div class="gallery-item glowy-item portrait-center">
+      <img src="img/foto23.jpg" alt="">
+      <div class="img-caption"><span>✿ always ♡</span></div>
+    </div>
+  </div>
+
+  <div class="glowy-separator">✦ &nbsp; ✿ &nbsp; ♡ &nbsp; ✿ &nbsp; ✦</div>
+
+</div>
+
+<div class="spacer-md"></div>
+
+<!-- Quote -->
+<div class="fade-in" style="max-width:480px;margin:0 auto;padding:0 28px;">
+  <div class="box-soft" style="text-align:center;">
+    <span class="quote-mark">"</span>
+    <p class="quote-text">every moment with you is my favorite place to be.</p>
+    <hr class="divider" style="width:30%;margin:14px auto 10px;">
+    <p class="quote-author">♡ glowy's world</p>
+  </div>
+</div>
+
+<div class="spacer-lg"></div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">‹</button>
+  <div class="lightbox-inner">
+    <img src="" alt="" id="lightboxImg">
+  </div>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">›</button>
+</div>
+
+<footer class="site-footer">
+  <p>♡ our story, told in photos ♡</p>
+  <small>Made with love &nbsp;·&nbsp; 2026</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
