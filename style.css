@@ -196,14 +196,14 @@ body.dark .toggle-icon { filter: invert(80%) sepia(15%) saturate(500%) hue-rotat
 /* Cari bagian ini (namanya bisa nav, .navbar, atau .nav-links tergantung HTML-mu) */
 nav {
   position: sticky;
-  top: 15px; 
+  top: 0px; 
   z-index: 9998; 
   background-color: rgba(255, 255, 255, 0.85); 
   backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px); 
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 
-  width: 600px; /* Kamu bisa memperbesar angkanya jadi 700px atau 800px jika ingin lebih lebar lagi */
+  width: 999px; /* Kamu bisa memperbesar angkanya jadi 700px atau 800px jika ingin lebih lebar lagi */
   max-width: 90%; /* Menjaga agar aman dan tidak terpotong saat dibuka di HP */
   margin: 0 auto; /* Menjaga kotaknya tetap di tengah layar */
   padding: 15px 0; /* Memberi jarak atas dan bawah. Kiri-kanannya 0 karena sudah diatur oleh width */   
@@ -717,15 +717,67 @@ nav {
 .site-footer p { font-size: 0.85rem; color: var(--text-rose); margin-bottom: 4px; transition: color 0.4s; }
 .site-footer small { font-size: 0.72rem; color: var(--text-mid); transition: color 0.4s; }
 
-/* ── Responsive ── */
+/* =========================================
+   TAMPILAN MOBILE (HP) 
+   ========================================= */
 @media (max-width: 680px) {
-  .hero-section { grid-template-columns: 1fr; text-align: center; }
-  .hero-photo-frame { margin: 0 auto; }
-  .hero-tags { justify-content: center; }
-  .article-card, .article-card.reverse { grid-template-columns: 1fr; }
-  .article-card .panel-img { height: 200px; }
-  .quick-links { grid-template-columns: 1fr; }
-  .gallery-row, .glowy-row { flex-wrap: wrap; }
+
+  /* --- TAMBAHAN BARU: Menurunkan Posisi Dark Mode DAN Widget Cuaca --- */
+  .dark-toggle {
+    top: 55px !important;
+  }
+
+  /* Ini dia yang bikin widget Manado ikut turun! */
+  #weather-widget {
+    top: 55px !important;
+  }
+
+  /* --- 1. Mencegah Overlap Navbar/Widget --- */
+  .page-wrapper {
+    padding-top: 140px !important;
+  }
+
+  /* --- 2. PENYESUAIAN FOTO13.JEPG & TEKS SIDE-BY-SIDE --- */
+  .hero-section {
+    display: grid !important;
+    grid-template-columns: 100px 1fr !important; /* Memaksa 2 kolom: Kiri 100px untuk foto, kanan sisanya */
+    gap: 15px !important; 
+    align-items: center !important; 
+    text-align: left !important;
+    padding: 20px 15px !important; 
+  }
+
+  /* Bingkai Foto */
+  .hero-photo-frame {
+    margin: 0 !important; 
+    padding: 6px !important; 
+    border-radius: 12px !important;
+  }
+
+  /* Gambar Profil (foto13.jepg) */
+  .hero-photo-frame img {
+    width: 100% !important; 
+    height: 125px !important; 
+    object-fit: cover !important; 
+    border-radius: 8px !important;
+  }
+
+  /* --- 3. KECILKAN TEKS DI MOBILE AGAR MUAT --- */
+  .hero-name {
+    font-size: 1.3rem !important; 
+    margin-bottom: 5px !important;
+  }
+  .hero-desc {
+    font-size: 0.8rem !important; 
+    line-height: 1.5 !important;
+  }
+  .hero-role, .welcome-tag {
+    font-size: 0.7rem !important;
+    margin-bottom: 5px !important;
+  }
+
+  /* Sembunyikan tag-pill di mobile jika terlalu penuh */
+  .hero-tags { display: none !important; }
 }
 
 /* ── 8. VIDEO FLOATING SINEMATIK (B + D) ── */
