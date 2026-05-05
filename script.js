@@ -152,7 +152,6 @@ console.log("Halo Gloria! Kodingan AJAX ini berhasil dibaca browser!");
   
   // --- A. LOGIKA CUACA (INJEKSI OTOMATIS KE SEMUA HALAMAN) ---
   
-  // 1. Suruh JS membuat kotaknya secara otomatis
   const weatherWidget = document.createElement('div');
   weatherWidget.innerHTML = `
     <div id="weather-widget" style="position: fixed; top: 18px; left: 22px; z-index: 9999; display: flex; align-items: center; gap: 8px; background: var(--bg-card); border: none; outline: none; border-radius: 50px; padding: 7px 16px; color: var(--text-wine); font-family: var(--font-body); font-size: 12px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; box-shadow: var(--shadow-sm); transition: all var(--transition);">
@@ -162,10 +161,8 @@ console.log("Halo Gloria! Kodingan AJAX ini berhasil dibaca browser!");
       </span>
     </div>
   `;
-  // Tempelkan kotak ini ke dalam halaman (Body)
   document.body.appendChild(weatherWidget);
 
-  // 2. Lanjut ambil data cuacanya seperti biasa
   const weatherDisplay = document.getElementById('weatherDisplay');
   
   const getWeatherInfo = (code) => {
@@ -217,19 +214,17 @@ console.log("Halo Gloria! Kodingan AJAX ini berhasil dibaca browser!");
     });
   }
 
-  /* ── LOGIKA VIDEO FLOATING SINEMATIK ── */
+  /* ── VIDEO FLOATING SINEMATIK ── */
 const videoOverlay = document.getElementById('videoOverlay');
 const mainVideo = document.getElementById('mainVideo');
 
 if (videoOverlay && mainVideo) {
   videoOverlay.addEventListener('click', function() {
-    // Sembunyikan overlay dengan efek pudar
     videoOverlay.style.opacity = '0';
     setTimeout(() => {
       videoOverlay.style.display = 'none';
     }, 400);
 
-    // Aktifkan kontrol dan putar video
     mainVideo.setAttribute('controls', 'true');
     mainVideo.play();
   });
