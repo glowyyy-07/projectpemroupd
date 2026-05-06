@@ -35,94 +35,131 @@
 
 <div class="page-wrapper">
 
-  <div class="section-head fade-in delay-2" style="margin-bottom:32px;">
-    <h2 class="heading" style="font-style:italic;">Get in Touch ✿</h2>
-    <p style="font-size:.9rem;color:var(--text-mid);margin-top:6px;transition:color .4s;">
-      Senang bertemu kamu! Hubungi saya melalui platform di bawah ini ♡
-    </p>
-  </div>
+  <!-- ── SIDEBAR LAYOUT: Data Diri kiri, Kontak kanan ── -->
+  <div class="contact-layout fade-in delay-2">
 
-  <!-- Contact Cards -->
-  <div style="max-width:580px;margin:0 auto;">
-
-    <a href="mailto:gloriatumundo026@student.unsrat.ac.id" style="display:block;">
-      <div class="contact-card fade-in delay-1">
-        <div class="contact-icon">
-          <img src="icons/mail.svg" class="icon-svg icon-filter" alt="Email">
+    <!-- KIRI: Data Diri -->
+    <aside class="profile-sidebar">
+      <div class="profile-sidebar-top">
+        <div class="profile-photo-wrap">
+          <img src="img/foto26.jpg" alt="Gloria Tumundo">
         </div>
-        <div class="contact-info">
-          <p class="contact-label">Email</p>
-          <p class="contact-value">gloriatumundo026@student.unsrat.ac.id</p>
-        </div>
-        <div class="contact-arrow">→</div>
+        <p class="profile-name">Gloria Tumundo</p>
+        <p class="profile-role">♡ Mahasiswa Informatika</p>
       </div>
-    </a>
-
-    <a href="https://instagram.com/gloriatumundo" target="_blank" style="display:block;">
-      <div class="contact-card fade-in delay-2">
-        <div class="contact-icon blush">
-          <img src="icons/instagram.svg" class="icon-svg icon-filter" alt="Instagram">
+      <div class="profile-data">
+        <div class="profile-data-row">
+          <span class="profile-data-key">Nama Lengkap</span>
+          <span class="profile-data-val">Gloria Missionary Tumundo</span>
         </div>
-        <div class="contact-info">
-          <p class="contact-label">Instagram</p>
-          <p class="contact-value">@gloriatumundo</p>
+        <div class="profile-data-row">
+          <span class="profile-data-key">NIM</span>
+          <span class="profile-data-val">240211060068</span>
         </div>
-        <div class="contact-arrow">→</div>
+        <div class="profile-data-row">
+          <span class="profile-data-key">Program Studi</span>
+          <span class="profile-data-val">Informatika</span>
+        </div>
+        <div class="profile-data-row">
+          <span class="profile-data-key">Fakultas</span>
+          <span class="profile-data-val">Teknik</span>
+        </div>
+        <div class="profile-data-row">
+          <span class="profile-data-key">Universitas</span>
+          <span class="profile-data-val">Universitas Sam Ratulangi</span>
+        </div>
+        <div class="profile-data-row">
+          <span class="profile-data-key">Angkatan</span>
+          <span class="profile-data-val">2024</span>
+        </div>
       </div>
-    </a>
+    </aside>
 
-  </div>
+    <!-- KANAN: Kontak (isi asli) -->
+    <div class="contact-right">
 
-  <div class="spacer-md"></div>
-
-  <!-- Contact Form -->
-  <div style="max-width:580px;margin:0 auto;">
-    <div class="contact-form fade-in">
-      <p class="form-title">Kirim Pesan ♡</p>
-
-      <form id="contactForm" novalidate>
-
-        <div class="form-group">
-          <label for="name">Nama</label>
-          <input type="text" id="name" name="name" placeholder="Nama kamu...">
-          <p class="form-error" id="nameError">Nama minimal 2 karakter ya ♡</p>
-        </div>
-
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="email@contoh.com">
-          <p class="form-error" id="emailError">Masukkan alamat email yang valid ♡</p>
-        </div>
-
-        <div class="form-group">
-          <label for="message">Pesan</label>
-          <textarea id="message" name="message" placeholder="Halo Gloria, saya ingin..."></textarea>
-          <p class="form-error" id="messageError">Pesan minimal 10 karakter ya ♡</p>
-        </div>
-
-        <button type="submit" class="form-submit">
-          <img src="icons/send-horizontal.svg" class="icon-svg-sm" alt="" style="filter:invert(27%) sepia(20%) saturate(1100%) hue-rotate(300deg) brightness(0.72);">
-          Kirim Pesan
-        </button>
-
-      </form>
-
-      <div class="form-success" id="formSuccess">
-        ✿ Terima kasih! Pesan kamu sudah saya terima ♡
+      <div class="section-head" style="text-align:left; margin-bottom:24px;">
+        <h2 class="heading" style="font-style:italic;">Get in Touch ✿</h2>
+        <p style="font-size:.9rem;color:var(--text-mid);margin-top:6px;transition:color .4s;">
+          Senang bertemu kamu! Hubungi saya melalui platform di bawah ini ♡
+        </p>
       </div>
-    </div>
-  </div>
 
-  <div class="spacer-md"></div>
+      <a href="mailto:gloriatumundo026@student.unsrat.ac.id" style="display:block;">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <img src="icons/mail.svg" class="icon-svg icon-filter" alt="Email">
+          </div>
+          <div class="contact-info">
+            <p class="contact-label">Email</p>
+            <p class="contact-value">gloriatumundo026@student.unsrat.ac.id</p>
+          </div>
+          <div class="contact-arrow">→</div>
+        </div>
+      </a>
 
-  <div class="fade-in" style="text-align:center;">
-    <p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2rem;font-style:italic;color:var(--text-rose);">
-      Always here ♡
-    </p>
-    <p style="font-size:.88rem;color:var(--text-mid);margin-top:8px;transition:color .4s;">
-      Terima kasih sudah mampir! ✿
-    </p>
-  </div>
+      <a href="https://instagram.com/gloriatumundo" target="_blank" style="display:block;">
+        <div class="contact-card">
+          <div class="contact-icon blush">
+            <img src="icons/instagram.svg" class="icon-svg icon-filter" alt="Instagram">
+          </div>
+          <div class="contact-info">
+            <p class="contact-label">Instagram</p>
+            <p class="contact-value">@gloriatumundo</p>
+          </div>
+          <div class="contact-arrow">→</div>
+        </div>
+      </a>
+
+      <div class="spacer-sm"></div>
+
+      <div class="contact-form">
+        <p class="form-title">Kirim Pesan ♡</p>
+        <form id="contactForm" novalidate>
+
+          <div class="form-group">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" placeholder="Nama kamu...">
+            <p class="form-error" id="nameError">Nama minimal 2 karakter ya ♡</p>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@contoh.com">
+            <p class="form-error" id="emailError">Masukkan alamat email yang valid ♡</p>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" placeholder="Halo Gloria, saya ingin..."></textarea>
+            <p class="form-error" id="messageError">Pesan minimal 10 karakter ya ♡</p>
+          </div>
+
+          <button type="submit" class="form-submit">
+            <img src="icons/send-horizontal.svg" class="icon-svg-sm" alt=""
+                 style="filter:invert(27%) sepia(20%) saturate(1100%) hue-rotate(300deg) brightness(0.72);">
+            Kirim Pesan
+          </button>
+
+        </form>
+        <div class="form-success" id="formSuccess">
+          ✿ Terima kasih! Pesan kamu sudah saya terima ♡
+        </div>
+      </div>
+
+      <div class="spacer-sm"></div>
+
+      <div style="text-align:center;">
+        <p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2rem;font-style:italic;color:var(--text-rose);">
+          Always here ♡
+        </p>
+        <p style="font-size:.88rem;color:var(--text-mid);margin-top:8px;transition:color .4s;">
+          Terima kasih sudah mampir! ✿
+        </p>
+      </div>
+
+    </div><!-- /contact-right -->
+  </div><!-- /contact-layout -->
 
   <div class="spacer-lg"></div>
 </div>
